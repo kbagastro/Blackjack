@@ -1,6 +1,7 @@
 import variables
 
 def make_bet():
+	""" function to add betting.  checks for correct value for bet and if bet is too high """
 	temp_pocket = variables.pocket - int(variables.wager)
 	betting = True
 	print("You currently have: $" + str(temp_pocket) + " to bet.")
