@@ -24,6 +24,8 @@ dealer = []
 # wager = 0
 # temp_pocket = pocket - int(wager)
 
+
+# main game loop
 while game_over is False:
 	# shuffle cards
 	random.shuffle(deck)
@@ -53,8 +55,8 @@ while game_over is False:
 	print("\nDealers's hand: " + "[" + dealer[0] + "]" + "[?]")
 
 	print("\nYour current hand total: " + str(player_score))
-	# main game loop
-
+	
+	# players turn
 	while not standing:
 		player_score = calc_hand(player)
 		dealer_score = calc_hand(dealer)
@@ -77,6 +79,7 @@ while game_over is False:
 		if player_score == 21:
 			standing = True
 
+		# check for hit or stand
 		move = str(input("\nWould you like to hit[1] or stand[2]? "))
 
 		if move == '1':
