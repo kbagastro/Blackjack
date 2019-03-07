@@ -25,12 +25,3 @@ def make_bet():
 pocket = 100
 wager = 0
 temp_pocket = pocket - int(wager)
-
-#make_bet()
-#
-#temp_pocket = pocket - int(wager)
-#
-#print(pocket)
-#print(wager)
-#print(temp_pocket)
-
