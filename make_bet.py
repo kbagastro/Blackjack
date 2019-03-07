@@ -1,4 +1,6 @@
 def make_bet():
+	""" Attempt at a function to handle betting.  
+	Has if statements to test if number is valid and if the bet is too much"""
 
 	global wager
 	global pocket
